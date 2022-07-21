@@ -2,9 +2,58 @@ body{
     margin: 0;
     width: 100%;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-div{
+/* Styling the nav bar */
+nav{
     display: flex;
-    justify-content: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 218, 204);
+}
+.left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.middle{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+.middle p{
     font-size: 20px;
+    font-weight: 500;
+}
+.middle p a{
+    color: rgb(46, 42, 42);
+    text-decoration: none;
+}
+/* adding hover effect to the middle details */
+.middle p:hover{
+    text-decoration: line-through;
+    transition: text-decoration 1000ms ease-in;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.right button{
+    background-color: rgb(236, 218, 204);
+    border: 1px solid rgb(46, 42, 42);
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    transition: 250ms ease-in;
+}
+/* adding a hover effect on the button */
+.right button:hover{
+    background-color: rgb(204, 190, 179);
 }
